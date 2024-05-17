@@ -1,0 +1,150 @@
+* {
+  font-weight: 500;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.navbar-nav {
+  margin: 0 2rem;
+}
+
+.navbar-nav li {
+  margin: 0 0.5rem;
+}
+
+.nav-link {
+  color: darkgrey;
+}
+
+.dropdown-item {
+  color: darkgrey;
+}
+
+.register-btn-custom {
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+.register-btn-custom:hover {
+  border: 1px solid #000;
+}
+
+.navbar-toggler {
+  z-index: 2000;
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  border: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1030;
+}
+
+.learn-custom-btn {
+  padding: 1rem 2rem;
+  max-width: 200px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mobile-bg-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .desktop-bg-image {
+    display: none;
+  }
+  .mobile-bg-image {
+    max-width: 100%;
+  }
+  .navbar-collapse-is_expanded {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 100vh;
+    padding-top: 10rem;
+    background-color: #fff;
+    z-index: 1040;
+    transition: ease-in-out 0.3s;
+  }
+  .navbar-collapse-is_expanded .navbar-exp {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .navbar-collapse-is_expanded div .navbar-exp {
+    justify-content: center;
+    align-items: center;
+  }
+  .register-btn-custom {
+    border: 1px solid #000;
+  }
+  .dropdown-menu {
+    border: 0;
+  }
+  main section {
+    text-align: center;
+    padding: 0 1.25rem;
+    margin-top: 2rem;
+  }
+  main section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  main section p {
+    color: darkgrey;
+  }
+  main section .learn-custom-btn {
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 2rem;
+  }
+  main section .learn-custom-btn:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  main section .brands {
+    margin: 1rem 0;
+  }
+  main section .brands .img-brands {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .mobile-bg-image {
+    display: none;
+  }
+  .desktop-bg-image {
+    height: 45rem;
+  }
+  main {
+    display: flex;
+  }
+  main section {
+    margin: 0 2rem;
+    max-width: 45%;
+  }
+  main section h1 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+  main section p {
+    font-size: 1.25rem;
+    color: darkgrey;
+    max-width: 90%;
+  }
+}
